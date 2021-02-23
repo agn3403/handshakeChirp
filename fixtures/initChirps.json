@@ -1,0 +1,27 @@
+[
+    {"model": "chirps.Chirp",
+    "pk": 1,
+    "fields": {
+      "id": 1,
+      "text": "This is the 1st chirp!"}},
+    {"model": "chirps.Chirp",
+    "pk": 2,
+    "fields": {
+      "id": 2,
+      "text": "This is the 2nd chirp!"}},
+    {"model": "chirps.Chirp",
+    "pk": 3,
+    "fields": {
+      "id": 3,
+      "text": "This is the 3rd chirp!"}},
+    {"model": "chirps.Chirp",
+    "pk": 4,
+    "fields": {
+      "id": 4,
+      "text": "This is the 4th chirp!"}},
+    {"model": "chirps.Chirp",
+    "pk": 5,
+    "fields": {
+      "id": 5,
+      "text": "This is the 5th chirp!"}}
+]

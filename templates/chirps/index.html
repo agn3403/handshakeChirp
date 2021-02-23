@@ -1,0 +1,49 @@
+{% load static %}
+<head>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#chirpVote-1").click(function(){
+
+        });
+    });
+</script>
+
+
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    th{
+        background-color: #faa5d1;
+    }
+    td{
+        background-color: #d9f9ff;
+    }
+    </style>
+</head>
+<body>
+    {% if latest_chirp_list %}
+        <table style="width:100%">
+        <caption>Added Chirps</caption>
+            <tr>
+                <th>Chirp ID</th>
+                <th>Chirp Text</th>
+                <th>Chirp Votes</th>
+            </tr>
+        {% for chirp in latest_chirp_list %}
+            <tr>
+                <td> {{ chirp.id }}</td>
+                <td> <span style="text-transform:uppercase"> {{ chirp.text }} </span></td>
+                <td> {{ chirp.votes }}</td>
+                <td><button id="chirpVote-{{ chirp.id }}" type="button">Upvotes</button></td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% else %}
+               <p>No chirps!</p>
+    {% endif %}
+</body>
+
